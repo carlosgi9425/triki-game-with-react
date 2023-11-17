@@ -6,4 +6,4 @@ El Triqui también conocido como tres en línea, juego del gato o equis cero ent
 
 ## Deshacer movimientos
 
-Podrás deshacer movimientos volviendo a la jugada anterior mediante el botón *vamos a la movida*
+Podrás deshacer movimientos volviendo a la jugada anterior mediante el botón *vamos a la movida #*

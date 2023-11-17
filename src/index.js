@@ -1,7 +1,10 @@
+// Se importan REACT Y RERACDOM
 import React from "react";
 import  ReactDOM  from "react-dom/client";
 import "./index.css"
 
+
+// Se crea la función square
 function Square(props){
     return(
         <button className="square" onClick={props.onClick}>
@@ -10,6 +13,7 @@ function Square(props){
     )
 }
 
+// escuha los clis, Crea el tablero de juego y renderiza las casillas
 class Board extends React.Component{
 
     renderSquare(i){
@@ -23,7 +27,7 @@ class Board extends React.Component{
 
         return(
             <div>
-                <div className="status">{status}</div>
+                <div className="status">{this.state}</div>
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
@@ -140,6 +144,7 @@ function calcuateWinner(squares){
     for (let i = 0; i < lines.length; i++){
         const [a, b, c] = lines[i];
         if (squares[a] && squares [a] === squares[b] && squares[a] === squares[c]){
+            // var squares = squares.trim()
             return squares[a];
         }
     }
